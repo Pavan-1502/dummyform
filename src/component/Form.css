@@ -1,0 +1,269 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #fff;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .formbold-main-wrapper {
+    margin: 0 auto;
+    max-width: 520px;
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 520px;
+    width: 100%;
+    background: white;
+    padding: 5px;
+    border-radius: 15px;
+  }
+
+  .container {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  .container h3 {
+    font-size: 1.4rem;
+    color: #07074d;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 10px;
+    line-height: 34px;
+  }
+  
+  .container .form {
+    margin-top: 10px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form .input-box {
+    width: 100%;
+    margin-top: 1px;
+  }
+  .input-box label {
+    color: #333;
+  }
+  .input-box {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form .input-box.label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  .form .radio-group {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin-top: 5.5px;
+  }
+  .form .radio-group label {
+    color: #707070;
+    margin-bottom: 5px;
+    margin-top: 12px;
+  }
+  input[type="radio"] {
+    width: 12px;
+    height: 12px;
+  }
+  .input-box .top{
+    margin-top: 2px;
+  }
+  .form :where(.radio-group input, .radio-group label) {
+    cursor: pointer;
+  }
+  
+  .form :where(.input-box input) {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+  }
+  .input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  }
+  .form .column {
+    display: flex;
+    column-gap: 10px;
+  }
+  
+  input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+  }
+  
+  .address :where(input, .select-box) {
+    margin-top: 10px;
+  }
+
+  .select-box{
+    width: 100%;
+  }
+  
+  .select-box select{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 5px;
+  }
+  
+  button {
+    width: 40%;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #6a64f1;
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  button:hover {
+    background: rgb(88, 56, 250);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  /*Responsive*/
+  @media screen and (max-width: 500px) {
+    .form .column {
+      flex-wrap: wrap;
+    }
+    .form :where(.gender-option, .gender) {
+      row-gap: 15px;
+    }
+    button {
+      width: 100%;
+    }
+    .container h3 {
+      text-align: center;
+    }
+  }
+  
+  .error-message {
+    color: #ff0000; 
+    font-size: 14px;
+    margin-top: 4px;
+    display: block;
+  }
+  
+  /*  */
+
+  table{
+    width:100%;
+    border:1px solid;
+    border-collapse: collapse;
+  }
+  th{
+    
+    border:1px solid;
+    border-collapse: collapse;
+  }
+  td{
+    width: 10%;
+    border:1px solid;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  .btn {
+    width: 5%;
+    height: 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 0 10px;
+    border: none;
+    font-weight: 500;
+    background-color: #6a64f1;
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
+    
+  }
+  .btn:hover {
+    background: rgb(88, 56, 250);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+ 
+  
+  /* 
+  .label {
+      font-size: 18px;
+      margin-bottom: 500px;
+      
+  } */
+  
+  /* 
+  .gender-box h3{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  .form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    flex-wrap: wrap;
+  }
+  .form .gender {
+    column-gap: 5px;
+  }
+  .gender input {
+    accent-color: rgb(130, 106, 251);
+  }
+  .form :where(.gender input, .gender label) {
+    cursor: pointer;
+  }
+  .gender label {
+    color: #707070;
+  } */
+  
